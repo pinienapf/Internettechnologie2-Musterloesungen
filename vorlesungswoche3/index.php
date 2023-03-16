@@ -10,6 +10,8 @@
 	<form action="ergebnis.php" method="post">
 		<p><input name="vorname">Vorname</p>
 		<p><input name="nachname">Nachname</p>
+		<p><input name="zahl1">zahl1</p>
+		<p><input name="zahl2">zahl2</p>
 		<p><input type="submit"</p>
 	</form>
 	
