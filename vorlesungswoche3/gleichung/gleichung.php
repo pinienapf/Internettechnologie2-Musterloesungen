@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="../stylesheet/style.css">
 </head>
 
-	<h1>Lineares Gleichungssystem</h1>
+	<h1>Lineares Gleichungssystem V2</h1>
 	
 	<?php
 		// Das Ergebnis wird erst angezeigt wenn das Formular gesendet wurde. Details siehe weiter unten.
@@ -17,26 +17,22 @@
 			$b=doubleval($_POST["b"]);
 			$c=doubleval($_POST["c"]);
 			$d=doubleval($_POST["d"]);
-			
 			$x=doubleval($_POST["x"]);
-			echo $a ;
-			echo $b ;
-			echo $c ;
-			echo $d ;
-			echo $x ;
 			
 			$min=-5;
 			$max=5;
 
 
-			if($min>=$x && $max<=5)
+			if($x>=$min && $x<=$max)
 			{
 				$y= ($a*pow($x,3)+$b*pow($x,2)+$c*$x+$d); 
 				$ergebnis = "Die Gleichung liefert für x=$x y=$y";
+				
 
 			} else
 			{
 				$ergebnis ="Die Berechnung konnte nicht durchgeführt werden. Der zulässige Bereich  liegt zwischen $min und $max. Ihre Angabe war $x";
+				
 			}
 		}
 	?>
@@ -65,10 +61,22 @@
 		<p><input type="submit" name="gesendet"</p>
 	</form>
 	
+	<p>
+		<?php 
+				/* Das Ergebnis wird erst angezeigt wenn das Formular gesendet wurde. Ebenfalls die Berechnung (Siehe oben).
+				Sonst wird die Berechnung ausgeführt, obwohl noch keine Menge erfasst oder eine Auswahl getroffen wurde.
+				Dafür wird der Submit-Button mit einem Namen versehen "gesendet". Dieser kann jetzt mit isset abgefragt werden.
+				*/
+				if(isset($_POST["gesendet"]))
+					{
+						echo $ergebnis;
+					}
+		?>
+	</p>
 	
 	<?php 
 			// Einbinden einer php-Datei, die Code enthält, der sonst redundant wäre.
-			include 'gleichungTabelle_inc.php'; 
+			include 'gleichungsTabelle_inc.php'; 
 			include '../backLink_inc.php'; 
 	?>
 	
