@@ -10,6 +10,7 @@
 	
 	<?php
 		// Dies ist ein Kommentar.
+	
 		
 		/* Ein mehrzeiliger Kommentar, 
 		der wieder mit einen Sternchen gefolgt vom Schrägstrich geschlossen werden muss.
