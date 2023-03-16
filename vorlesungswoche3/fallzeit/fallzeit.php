@@ -7,19 +7,20 @@
 
 <body>
 	<h1>Berechnung des freies Falls eines Handys - Version 1</h1>
-	
-	<?php
-		// Dies ist ein Kommentar.
-	
+	<form action="ergebnis.php" method="post">
 		
-		/* Ein mehrzeiliger Kommentar, 
-		der wieder mit einen Sternchen gefolgt vom Schrägstrich geschlossen werden muss.
-		*/
-		// Definition der benötigten Variablen
-		$hoehe=15;
-	    const fallbeschleunigung = 9.81; // Definition einer Konstanten. Es wird kein $-Zeichen vorangestellt.
-		echo (sqrt((2*$hoehe)/(fallbeschleunigung))); // Berechnung und Ausgabe
+		<p>
+			<label for="hoehe">Höhe:</label>
+			<input id="hoehe" name="hoehe"> 
+		</p>
+		<p>
+			<label for="ort">Ort:</label> 
+			<input id="ort" name="ort">
+			Mögliche Angaben: Erde, Mond, Mars,Jupiter
+		</p>
 		
-	?>
+		<p><input type="submit"</p>
+	</form>
+	
 </body>
 </html>

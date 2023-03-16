@@ -1,0 +1,3 @@
+/* CSS Document */
+tr:nth-child(odd) {background-color: #F5AAB9;}
+tr:nth-child(even) {background-color: #ECECEC;}
