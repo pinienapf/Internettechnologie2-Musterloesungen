@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Berechnung des freien Falls eines Handys</title>
-	<link rel="stylesheet" type="text/css" href="../stylesheet/style.css"
+	<link rel="stylesheet" type="text/css" href="../stylesheet/style.css">
 </head>
 
 <body>
