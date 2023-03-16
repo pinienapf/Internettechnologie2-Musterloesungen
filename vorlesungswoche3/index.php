@@ -2,20 +2,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Arbeiten mit Formularen</title>
+<title>PHP-Einstieg</title>
 </head>
 
 <body>
-	<h1>Arbeiten mit Formularen</h1>
-	<form action="index.php" method="post">
-		<p><input name="vorname">Vorname</p>
-		<p><input name="nachname">Nachname</p>
-		<p><input name="zahl1">zahl1</p>
-		<p><input name="zahl2">zahl2</p>
-		<p><input type="submit"</p>
-	</form>
-	
-	
-	
+<p>Musterlösungen für den Einstieg in die PHP-Programmierung</p>
+<p>Aufgabe 1: <a href="fallzeit/fallzeit.php">Fallzeit-Berechnung</a></p>
+<p>Aufgabe 2: <a href="tank/tank.php">Tankkostenberechnung</a></p>
+<p>Aufgabe 3: <a href="gleichung/gleichung.php">Mathematische Gleichung</a></p>
+<p>Aufgabe 4: <a href="rechteck/rechteck.php">Rechteck-Berechnung</a></p>
+<p>Aufgabe 5: <a href="bmi/bmi.php">BMI-Berechnung</a></p>
+<p>Aufgabe 6: <a href="bandbreite/bandbreite.php">Berechnung für die Übertragungsdauer von Dateien</a></p>
 </body>
 </html>
