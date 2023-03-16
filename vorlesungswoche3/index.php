@@ -7,8 +7,8 @@
 
 <body>
 	<h1>Arbeiten mit Formularen</h1>
-	<form action="" method="">
-		<p><input name="vor">Vorname</p>
+	<form action="ergebnis.php" method="post">
+		<p><input name="vorname">Vorname</p>
 		<p><input name="nachname">Nachname</p>
 		<p><input type="submit"</p>
 	</form>
