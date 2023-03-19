@@ -63,6 +63,10 @@
 					}
 		?>
 	</p>
-	
+	<?php 
+			// Einbinden einer php-Datei, die Code enthält, der sonst redundant wäre.
+			
+			include '../backLink_inc.php'; 
+	?>
 </body>
 </html>
